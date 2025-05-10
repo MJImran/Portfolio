@@ -43,7 +43,7 @@ a:hover,a:active{
   margin: 0 auto;
 }
 header{
-  background-image: url(/images/back-4.jpg);
+  background-image: url(../images/back-4.jpg);
   background-size: cover;
   color:#393A46;
 }
