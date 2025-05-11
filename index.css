@@ -209,14 +209,16 @@ footer{
 
 
 .project--card{
+  
   background-color: red;
   padding: 15px;
+  width: 33%
   
   
 }
 
 .project-img{
-  width: 100px
+  width: 30%
 }  
 
 .project-card-text{}
