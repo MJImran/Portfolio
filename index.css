@@ -13,7 +13,7 @@ body {
 section {
   margin: 0 10px;
   padding: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-color:#fff;
 }
 a:link,a:visited{
@@ -190,4 +190,32 @@ footer{
   background-color: #fff;
 }
 
+/* PROJECT SECTION*/
+.projects{
+  background-color: skyblue;
+  display:grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows:1fr;
+}
+.cd1{
+  grid-column: 1/2;
+}
+.cd2{
+  grid-column:2/3; 
+}
+.cd3{
+  grid-column:3/4
+}
 
+
+.project--card{
+  
+}
+
+.project-img{
+  width: 200px
+}  
+
+.project-card-text{}
+
+.check-btn{}
