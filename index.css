@@ -193,8 +193,8 @@ footer{
 /* PROJECT SECTION*/
 .projects{
   background-color: skyblue;
-  display:grid;
-  grid-template-columns: repeat(3, 300px);
+  display: flex;
+  /*grid-template-columns: repeat(3, 300px);
   grid-template-rows:1fr;
 }
 .cd1{
@@ -205,15 +205,18 @@ footer{
 }
 .cd3{
   grid-column:3/4
-}
+}*/
 
 
 .project--card{
+  background-color: red;
+  padding: 15px;
+  
   
 }
 
 .project-img{
-  width: 200px
+  width: 100px
 }  
 
 .project-card-text{}
