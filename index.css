@@ -212,7 +212,6 @@ footer{
 .project--card{
   justify-self: center;
   padding: 15px;
-  /*background-color: red;*/
   
   box-shadow: 25px 25px 70px  rgba(0, 0, 0, 0.1)
   
@@ -220,7 +219,8 @@ footer{
 }
 
 .project-img{
-  width: 60%
+  margin:20px auto;
+  width: 70%
 }  
 
 .project-card-text{}
