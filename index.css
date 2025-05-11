@@ -13,7 +13,7 @@ body {
 section {
   margin: 0 10px;
   padding: 60px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   background-color:#fff;
 }
 a:link,a:visited{
@@ -196,7 +196,7 @@ footer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:1fr;
-  column-gap: 50px;
+  column-gap: 30px;
 }
 .cd1{
   grid-column: 1/2;
@@ -210,8 +210,9 @@ footer{
 
 
 .project--card{
-  justify-self: center;
-  padding: 15px;
+  width:100%;
+  padding: 30px;
+  justify-items: center ;
   
   box-shadow: 25px 25px 70px  rgba(0, 0, 0, 0.1)
   
@@ -219,11 +220,24 @@ footer{
 }
 
 .project-img{
-  margin:20px auto;
-  width: 70%
+  width:200px;
+  margin-bottom:50px
 }  
 
-.project-card-text{}
+.project-card-text{
+  justify-items: center;
+  /*background-color: skyblue;*/
+}
+.project-name{
+  margin-bottom:20px;
+  font-size:24px;
+  text-transform: uppercase;
+}
+.project-description{
+  font-size:20px;
+  justify-items:center;
+}
+.tech-used{}
 
 .check-btn{
   display:inline-block;
