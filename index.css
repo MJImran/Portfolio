@@ -17,16 +17,16 @@ section {
   background-color:#f7f7f7;
 }
 a:link,a:visited{
-  background-color:#89cfef;
+  background-color:#127BB0;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-weight:700;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 a:hover,a:active{
   background-color: #373E8D;
-  border-radius: 20px;
+  border-radius: 10px;
   
 }
 /* TYPOGRAPHY */
@@ -43,7 +43,7 @@ a:hover,a:active{
   margin: 0 auto;
 }
 header{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(145, 220, 240, 0.1)), url(images/back-4.jpg);
+  background-image: linear-gradient(rgba(145, 220, 240, 0.1),rgba(255, 255, 255, 0.6)), url(images/back-4.jpg);
   background-size: cover;
   color:#fff;
 }
@@ -60,7 +60,7 @@ nav {
 }
 
 .logo {
-  width:70px;
+  width:110px;
   /*font-family: Tagesschrift;
   font-size: 42px;
   font-weight: 900;
@@ -94,13 +94,14 @@ nav {
   width:80%;
   padding: 60px 40px;
   background-color:#42445A00;
+  color:#010100;rgba(1, 1, 0, 1)
   /*display: grid;
   grid-template-columns: 1fr,1fr;*/
 }
 
 .go-sentence {
-  font-family: Tagesschrift;
-  font-size:50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:48px;
   text-transform: uppercase;
   margin-top:40px;
   margin-bottom: 30px;
@@ -110,7 +111,7 @@ nav {
 .btn{}
 
 .hero-sec-btn{
-  font-size: 28px;
+  font-size:20px;
   font-size:550;
   display: inline-block;
   background-color:#79baec;
@@ -118,11 +119,11 @@ nav {
   margin-right: 30px;
 }
 .intro{
-  font-size:38px;
-  font-weight: 650;
+  font-size:30px;
+  font-weight: 600;
   margin-bottom:100px;
   line-height: 1.5;
-  letter-spacing:0.2px;
+  letter-spacing:1.5px;
 }
 
 /*ABOUT SECTION*/
