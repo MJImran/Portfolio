@@ -14,7 +14,7 @@ section {
   margin: 0 10px;
   padding: 60px;
   margin-bottom: 20px;
-  background-color:#fff;
+  background-color:#f7f7f7;
 }
 a:link,a:visited{
   background-color:#89cfef;
@@ -28,13 +28,12 @@ a:hover,a:active{
   background-color: #373E8D;
   
 }
-
-
 /* TYPOGRAPHY */
 
 
 
 /* SECTIONS STYLING  */
+
   
 /* CONTAINER */
 .container {
@@ -43,80 +42,83 @@ a:hover,a:active{
   margin: 0 auto;
 }
 header{
-  background-image: url(images/back-4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(145, 220, 240, 0.1)), url(images/back-4.jpg);
   background-size: cover;
-  color:#393A46;
+  color:#fff;
 }
 
-
 /* header section */
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin:0 10px;
   margin-bottom: 10px;
   padding: 20px;
 }
 
 .logo {
-  font-family: Tagesschrift;
+  width:80px;
+  /*font-family: Tagesschrift;
   font-size: 42px;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2px;*/
 }
 
 /* NAV BAR */
 .header--links {
   display: flex;
-  /* justify-content:space-between */
-  ;
-  gap: 30px
+  /* justify-content:space-between ;*/
+  gap: 20px;
 }
 
 .links {
-  font-size: 18px;
-  font-weight: 500;
+  /*font-size: 18px;
+  font-weight: 500;*/
   text-transform: uppercase;
   list-style: none;
 }
 .nav-link{
-  background-color:#79baec;
+  font-size: 22px;
+  font-weight: 550;
+  background-color:#457EAA;
   padding:10px 20px;
 }
 
 /* Hero section */
+
 .hero-section {
   width:80%;
   padding: 60px 40px;
   background-color:#42445A00;
-  
   /*display: grid;
   grid-template-columns: 1fr,1fr;*/
-
 }
 
 .go-sentence {
-  font-size:44px;
+  font-family: Tagesschrift;
+  font-size:50px;
   text-transform: uppercase;
   margin-top:40px;
   margin-bottom: 30px;
-  line-height: 1.1;
-  letter-spacing: -0.8px;
+  line-height: 1.5;
+  letter-spacing: 0px;
 }
 .btn{}
 
 .hero-sec-btn{
-  /*display: inline-block;*/
+  font-size: 28px;
+  font-size:550;
+  display: inline-block;
   background-color:#79baec;
   padding: 20px 40px;
   margin-right: 30px;
 }
 .intro{
-  font-size:32px;
-  font-weight: 600;
+  font-size:38px;
+  font-weight: 650;
   margin-bottom:100px;
   line-height: 1.5;
   letter-spacing:0.2px;
