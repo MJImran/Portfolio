@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -25,7 +26,7 @@ a:link,a:visited{
   border-radius: 10px;
 }
 a:hover,a:active{
-  background-color: #373E8D;
+  background-color: #257F82;
   border-radius: 10px;
   
 }
