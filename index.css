@@ -149,7 +149,7 @@ header {
 .about-section {
   padding: 4rem;
   color: #393a46;
-  height: 100vh;
+  /* height: 100vh; */
 
   display: grid;
   grid-template-columns: 2fr 2fr;
