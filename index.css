@@ -16,8 +16,7 @@ body {
 }
 
 section {
-  padding: 9.6rem;
-  /* background-color: #edf3fb; */
+  padding: 0 4rem;
   margin-top: 2.4rem;
 }
 a:link,
@@ -156,7 +155,7 @@ header {
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 60px 3fr;
   column-gap: 30px;
-  align-items: start;
+  align-items: center;
   row-gap: 10px;
 }
 .section-head {
@@ -217,7 +216,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  column-gap: 30px;
+  column-gap: 3rem;
 }
 .cd1 {
   grid-column: 1/2;
@@ -231,7 +230,7 @@ footer {
 
 .project--card {
   width: 100%;
-  padding: 30px;
+  padding: 3rem;
   justify-items: center;
 
   box-shadow: 25px 25px 70px rgba(0, 0, 0, 0.1);
