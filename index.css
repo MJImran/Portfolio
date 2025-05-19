@@ -1,4 +1,6 @@
+/*******************/
 /* GENERAL STYLING*/
+/*******************/
 
 * {
   margin: 0;
@@ -13,6 +15,11 @@ body {
   color: #14283f;
   font-family: "lato", sans-serif;
   background-color: #edf3fb;
+}
+
+.container {
+  max-width: 145rem;
+  margin: 0 auto;
 }
 
 section {
@@ -34,16 +41,14 @@ a:active {
   color: #fff;
   border-radius: 1rem;
 }
-/* TYPOGRAPHY */
 
+/*******************/
 /* SECTIONS STYLING  */
+/*******************/
 
-/* CONTAINER */
-.container {
-  max-width: 145rem;
-  margin: 0 auto;
-  /* padding: 0 6rem; */
-}
+/*******************/
+/* HEADER SECTION */
+
 header {
   display: flex;
   align-items: center;
@@ -54,18 +59,10 @@ header {
   background-color: #edf3fb;
 }
 
-/* header section */
 .logo {
   width: 8rem;
   border-radius: 50%;
-  /*font-family: Tagesschrift;
-  font-size: 42px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 2px;*/
 }
-
-/* NAV BAR */
 
 .nav-bar {
   display: flex;
@@ -73,18 +70,17 @@ header {
   align-items: center;
   margin-bottom: 1rem;
 }
+
 .header--links {
   display: flex;
-  /* justify-content:space-between ;*/
   gap: 2rem;
 }
 
 .links {
-  /*font-size: 18px;
-  font-weight: 500;*/
   text-transform: uppercase;
   list-style: none;
 }
+
 .nav-btn {
   font-size: 1.8rem;
   font-weight: 550;
@@ -92,12 +88,12 @@ header {
   padding: 0.8rem 1.6rem;
 }
 
+/*******************/
 /* Hero section */
 
 .hero-section {
   padding: 0 3rem;
   color: #14283f;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -105,21 +101,20 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .hero-text {
   grid-column: 1/2;
 }
+
 .hero-image-container {
   grid-column: 2/3;
 }
+
 .hero-image {
   width: 90%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .go-sentence {
-  /* font-family: "Times New Roman", Times, serif; */
   font-size: 4rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -136,6 +131,7 @@ header {
   padding: 1rem 2rem;
   margin-right: 2rem;
 }
+
 .intro {
   font-size: 2rem;
   font-weight: 500;
@@ -144,13 +140,12 @@ header {
   letter-spacing: 0.2px;
 }
 
+/*******************/
 /*ABOUT SECTION*/
 
 .about-section {
   padding: 4rem;
   color: #393a46;
-  /* height: 100vh; */
-
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 60px 3fr;
@@ -158,6 +153,7 @@ header {
   align-items: center;
   row-gap: 10px;
 }
+
 .section-head {
   font-size: 2.5rem;
   font-weight: 700;
@@ -166,6 +162,7 @@ header {
   grid-column: 1/-1;
   grid-row: 1/2;
 }
+
 .image-card {
   grid-column: 1/-1;
   grid-row: 2/-1;
@@ -174,29 +171,31 @@ header {
   gap: 4rem;
   align-items: center;
   justify-content: center;
-
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 2.5rem 2.5rem 7rem rgba(0, 0, 0, 0.1);
 }
+
 .author-img {
- grid-column: 1/2;
+  grid-column: 1/2;
   border-radius: 1rem;
   height: 30rem;
 }
+
 .about-inner {
   grid-column: 2/-1;
   align-items: center;
   font-weight: 600;
-  padding:6rem;
+  padding: 6rem;
 }
+
 .bio {
   font-size: 2rem;
   line-height: 1.5;
   letter-spacing: 1px;
-
   margin-bottom: 3rem;
 }
+
 .skill-set {
   font-size: 2rem;
   font-weight: 500;
@@ -205,62 +204,69 @@ header {
   padding: 0;
   margin-bottom: 3rem;
 }
+
 .skill {
   list-style: none;
+
+  /*******************/
+  /* PROJECT SECTION*/
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 3rem;
+  }
+
+  .cd1 {
+    grid-column: 1/2;
+  }
+
+  .cd .cd3 {
+    grid-column: 3/4;
+  }
+
+  .project--card {
+    width: 100%;
+    padding: 3rem;
+    justify-items: center;
+
+    box-shadow: 25px 25px 70px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-img {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+
+  .project-card-text {
+    justify-items: center;
+  }
+
+  .project-name {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .project-description {
+    font-size: 20px;
+    justify-items: center;
+  }
+
+  .tech-used {
+    background-color: ;
+  }
+
+  .check-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+
+  /*******************/
+  /* FOOTER SECTION */
 }
 footer {
   background-color: #fff;
-}
-
-/* PROJECT SECTION*/
-.projects {
-  /*background-color: skyblue;*/
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  column-gap: 3rem;
-}
-.cd1 {
-  grid-column: 1/2;
-}
-.cd2 {
-  grid-column: 2/3;
-}
-.cd3 {
-  grid-column: 3/4;
-}
-
-.project--card {
-  width: 100%;
-  padding: 3rem;
-  justify-items: center;
-
-  box-shadow: 25px 25px 70px rgba(0, 0, 0, 0.1);
-}
-
-.project-img {
-  width: 200px;
-  margin-bottom: 50px;
-}
-
-.project-card-text {
-  justify-items: center;
-  /*background-color: skyblue;*/
-}
-.project-name {
-  margin-bottom: 20px;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-.project-description {
-  font-size: 20px;
-  justify-items: center;
-}
-.tech-used {
-}
-
-.check-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
 }
