@@ -20,6 +20,8 @@ body {
 .container {
   max-width: 145rem;
   margin: 0 auto;
+  padding: 0 2rem;
+  /*background-color:red;*/
 }
 
 section {
@@ -87,6 +89,9 @@ header {
   background-color: #457eaa;
   padding: 0.8rem 1.6rem;
 }
+.nav-bar:last-child{
+  padding: 0 0;
+}
 
 /*******************/
 /* Hero section */
@@ -152,6 +157,7 @@ header {
   column-gap: 30px;
   align-items: center;
   row-gap: 10px;
+  /*background-color:green;*/
 }
 
 .section-head {
@@ -207,6 +213,7 @@ header {
 
 .skill {
   list-style: none;
+}
 
   /*******************/
   /* PROJECT SECTION*/
@@ -216,46 +223,52 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     column-gap: 3rem;
+    /*background-color:green;*/
+    padding:4rem;
   }
 
   .cd1 {
     grid-column: 1/2;
   }
 
-  .cd .cd3 {
+  .cd2{
+   grid-column: 2/3;
+  } 
+  
+  .cd3 {
     grid-column: 3/4;
   }
 
   .project--card {
-    width: 100%;
-    padding: 3rem;
+    padding: 3rem 1rem;
     justify-items: center;
-
+    /*background-color:#1223D9;*/
     box-shadow: 25px 25px 70px rgba(0, 0, 0, 0.1);
+  border-radius:1rem;
   }
 
   .project-img {
-    width: 200px;
-    margin-bottom: 50px;
+   width: 20rem;
+   height:20rem;
+   margin-bottom: 5rem;
+   border-radius: 50%;
   }
 
   .project-card-text {
-    justify-items: center;
+    height: 20rem;
+    /*background-color:red;*/
+    padding:2rem;
   }
 
   .project-name {
     margin-bottom: 20px;
     font-size: 24px;
     text-transform: uppercase;
+    
   }
 
   .project-description {
     font-size: 20px;
-    justify-items: center;
-  }
-
-  .tech-used {
-    background-color: ;
   }
 
   .check-btn {
@@ -266,7 +279,7 @@ header {
 
   /*******************/
   /* FOOTER SECTION */
-}
+
 footer {
   background-color: #fff;
 }
