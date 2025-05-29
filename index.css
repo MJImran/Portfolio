@@ -109,11 +109,11 @@ header {
 
 .hero-text {
   grid-column: 1/2;
-  justify-content: center;
 }
 
 .hero-image-container {
   grid-column: 2/3;
+  display: flex;
   justify-content: center;
 }
 
@@ -137,6 +137,7 @@ header {
   background-color: #79baec;
   padding: 1rem 2rem;
   margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 .intro {
