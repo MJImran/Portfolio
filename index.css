@@ -251,10 +251,10 @@ header {
 }
 
 .project-img {
-  width: 20rem;
-  height: 20rem;
+  width: 50%;
+  /* height: 20rem; */
   margin-bottom: 5rem;
-  border-radius: 50%;
+  border-radius: 1rem;
 }
 
 .project-card-text {
