@@ -26,5 +26,6 @@
   "typescript.suggest.enabled": false,
   "javascript.suggest.completeJSDocs": false,
   "typescript.suggest.completeJSDocs": false,
-  "github.copilot.advanced": {}
+  "github.copilot.advanced": {},
+  "liveServer.settings.port": 5501
 }
