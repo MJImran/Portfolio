@@ -45,6 +45,7 @@ section {
 /* HEADER SECTION */
 .header {
   background-color: #fff;
+  margin-bottom: 9.6rem;
   /* background: linear-gradient(0deg, #292929 50%, #fff 50%); */
   /* background: linear-gradient(100deg, 50%, #fff 50%); */
 }
@@ -215,11 +216,13 @@ section {
 .about-section {
   padding: 4rem;
   color: #393a46;
+  margin-bottom: 9.6rem;
 }
 
 .about-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 45rem;
   gap: 2.4rem;
   padding: 1rem;
 
@@ -228,7 +231,9 @@ section {
 }
 
 .author-img-box {
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2.4rem;
   /* display: flex;
   justify-content: center; */
@@ -237,7 +242,7 @@ section {
 .author-img {
   grid-column: 1/2;
   border-radius: 1rem;
-  height: 30rem;
+  width: 100%;
   filter: grayscale(100%);
 }
 
@@ -272,12 +277,12 @@ section {
   font-weight: 500;
 }
 
-.tab-links {
+.tabs {
   cursor: pointer;
   position: relative;
 }
 
-.tab-links::after {
+.tabs::after {
   content: "";
   width: 0;
   height: 3px;
@@ -288,8 +293,8 @@ section {
   transition: 0.5s;
 }
 
-.tab-links.active-link::after {
-  width: 70%;
+.tabs.active-tab::after {
+  width: 100%;
 }
 
 .tab-content {
@@ -307,7 +312,7 @@ section {
   color: #a5bf13;
   font-size: 1.2rem;
 }
-.tab-content.active-tab {
+.tab-content.active-cont {
   display: block;
 }
 
@@ -329,10 +334,10 @@ section {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   column-gap: 3rem;
-  /*background-color:green;*/
+  justify-content: center;
   padding: 4rem;
 }
 
