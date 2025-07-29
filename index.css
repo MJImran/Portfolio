@@ -37,10 +37,6 @@ section {
 .btn:visited {
   text-decoration: none;
 }
-.btn:hover,
-.btn:active {
-}
-
 /*******************/
 /* SECTIONS STYLING  */
 /*******************/
@@ -50,7 +46,7 @@ section {
 .header {
   background-color: #fff;
   /* background: linear-gradient(0deg, #292929 50%, #fff 50%); */
-  /* background: linear-gradient(100deg, #a5bf13 50%, #fff 50%); */
+  /* background: linear-gradient(100deg, 50%, #fff 50%); */
 }
 .header-nav {
   display: flex;
@@ -95,34 +91,38 @@ section {
 .nav-btn:visited {
   font-size: 1.8rem;
   letter-spacing: 1px;
-  color: #292929;
+  /* color: #101010; */
+  color: #63730b;
   /* text-transform: uppercase; */
   font-weight: 600;
 }
 .nav-btn:hover,
 .nav-btn:active {
-  color: #949494;
+  /* color: #949494; */
+  color: #a5bf13;
+  color: #101010;
   font-weight: 600;
-  border-bottom: 2px solid #949494;
+  border-bottom: 2px solid #63730b;
   transition: all 0.15s ease-in;
 }
 
 .nav-cta:link,
 .nav-cta:visited {
-  border: 2px solid #292929;
+  border: 2px solid #63730b;
   text-transform: uppercase;
   padding: 0.8rem 1.2rem;
   border-radius: 1rem;
   font-size: 1.8rem;
   letter-spacing: 1px;
-  color: #292929;
+  color: #63730b;
   font-weight: 600;
   transition: all 0.15s ease-in;
 }
 .nav-cta:hover,
 .nav-cta:active {
-  color: #949494;
-  border: 2px solid #949494;
+  color: #292929;
+  color: #101010;
+  border: 2px solid #101010;
   font-weight: 600;
   border-radius: 1rem;
 }
@@ -135,7 +135,7 @@ section {
 
 .hero-section {
   padding: 0 9.6rem;
-  color: #292929;
+  color: #101010;
   display: grid;
 
   grid-template-columns: 1fr 1fr;
@@ -189,7 +189,7 @@ section {
 }
 
 .fa-brands {
-  color: #292929;
+  color: #63730b;
   font-size: 3.5rem;
 }
 .icons {
@@ -226,12 +226,14 @@ section {
   /* box-shadow: 2.5rem 2.5rem 7rem rgba(0, 0, 0, 0.1);
   border-radius: 3rem; */
 }
+
 .author-img-box {
   justify-self: center;
   padding: 2.4rem;
   /* display: flex;
   justify-content: center; */
 }
+
 .author-img {
   grid-column: 1/2;
   border-radius: 1rem;
@@ -245,16 +247,68 @@ section {
   font-weight: 600;
   padding: 2.3rem;
 }
+
 .section-head {
+  color: #63730b;
   font-size: 3.5rem;
   font-weight: 550;
   margin-bottom: 2.4rem;
 }
+
 .about-content {
+  color: #292929;
   font-size: 1.8rem;
-  line-height: 1.5;
-  letter-spacing: 1px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
   margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.tab-titles {
+  display: flex;
+  gap: 2.3rem;
+  margin: 20px 0 40px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.tab-links {
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #63730b;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 70%;
+}
+
+.tab-content {
+  font-size: 1.5rem;
+  font-weight: 450;
+  display: none;
+}
+
+.tab-content ul li {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.tab-content ul li span {
+  color: #a5bf13;
+  font-size: 1.2rem;
+}
+.tab-content.active-tab {
+  display: block;
 }
 
 .skill-set {
