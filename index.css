@@ -407,7 +407,7 @@ section {
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .project-card-text {
@@ -439,9 +439,22 @@ section {
   color: #292929;
 }
 
-.check-btn {
-  display: inline-block;
-  padding: 10px 20px;
+.check-btn:link,
+.check-btn:visited {
+  color: #63730b;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: 2px solid #63730b;
+  border-radius: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  transition: all 0.15s ease-in;
+}
+
+.check-btn:hover,
+.check-btn:active {
+  color: #101010;
+  border: 2px solid #101010;
 }
 
 /* section {
