@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>INUOLAJI,s Portfolio</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/11bf6f6a02.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -85,7 +83,7 @@
         <figure class="about-card">
           <div class="author-img-box">
             <img
-              src="./images/author.jpg"
+              src="./images/coderA.jpg"
               alt="author image"
               class="author-img"
             />
@@ -93,10 +91,11 @@
           <div class="about-textbox">
             <h1 class="section-head">About</h1>
             <p class="about-content">
-              over a year of professional experience working with several
-              progromming tools to deliver quality results to clients. I have
-              experience & knowledge In frontend engineering. Software testing
-              and web3 development
+              As a seasoned frontend developer with over a year of professional
+              experience, I possess a strong skill set in designing and
+              developing high-quality user interfaces. Proficient in a range of
+              programming tools, I have consistently delivered results-driven
+              solutions to clients.
             </p>
             <div class="tab-titles">
               <p class="tabs active-tab" onclick="openTab('skills')">Skills</p>
@@ -146,21 +145,144 @@
       </section>
 
       <!--  -->
-      <!--  PROJECTS SECTION -->
-      <!-- <section class="projects">
-        <div class="project--card cd1">
-          <img
-            src="./images/nalot-logo.png"
-            alt="nalot website image"
-            class="project-img"
-          />
+      <!-- SERVICES SECTION -->
+      <!--  -->
 
+      <section class="services">
+        <div class="services-container">
+          <h1 class="section-head">Services</h1>
+          <div class="service-list">
+            <div class="service-box">
+              <i class="fa-solid fa-code service-icon"></i>
+              <h2 class="service-head">Web Design</h2>
+              <p class="service-content">
+                I design user-friendly interfaces that meet the needs of my
+                clients. My designs are tailored to enhance user engagement.
+              </p>
+            </div>
+            <div class="service-box">
+              <i class="fa-solid fa-computer service-icon"></i>
+              <h2 class="service-head">Development and Implementation</h2>
+              <p class="service-content">
+                I design user-friendly interfaces that meet the needs of my
+                clients. My designs are tailored to enhance user engagement.
+              </p>
+            </div>
+            <div class="service-box">
+              <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+              <h2 class="service-head">Maintenance and update</h2>
+              <p class="service-content">
+                I design user-friendly interfaces that meet the needs of my
+                clients. My designs are tailored to enhance user engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <!--  PROJECTS SECTION -->
+      <section class="projects">
+        <h1 class="section-head">Portfolio</h1>
+
+        <div class="project--card">
+          <div class="project-img-box">
+            <img
+              src="./images/port.jpg"
+              alt="portfolio 6image"
+              class="project-img"
+            />
+          </div>
+
+          <div class="project-card-text">
+            <h4 class="project-name">My portfolio</h4>
+
+            <p class="project-description">
+              A portfolio built by myself to show my web dev skills
+            </p>
+            <ul>
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-css3-alt"></i></li>
+              <li><i class="fa-brands fa-js"></i></li>
+            </ul>
+          </div>
+          <a
+            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nalot.com.ng/&ved=2ahUKEwiC2LSv_5mNAxUxdUEAHTJZKKwQFnoECBgQAQ&usg=AOvVaw0nUJFmsHCbCZhtMhk8jQeW"
+            class="check-btn"
+            >visit site</a
+          >
+        </div>
+
+        <div class="project--card">
+          <div class="project-img-box">
+            <img src="./images/qr.jpg" alt="QR-component" class="project-img" />
+          </div>
+
+          <div class="project-card-text">
+            <h4 class="project-name">QR-component</h4>
+
+            <p class="project-description">
+              qr component on frontendmentor challenge.
+            </p>
+            <ul>
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-css3-alt"></i></li>
+              <!-- <li><i class="fa-brands fa-js"></i></li> -->
+            </ul>
+            <a
+              href="https://mjimran.github.io/qr-code-component/"
+              class="check-btn"
+              >visit site</a
+            >
+          </div>
+        </div>
+
+        <div class="project--card">
+          <div class="project-img-box">
+            <img
+              src="./images/port.jpg"
+              alt="portfolio 6image"
+              class="project-img"
+            />
+          </div>
+
+          <div class="project-card-text">
+            <h4 class="project-name">My portfolio</h4>
+
+            <p class="project-description">
+              A portfolio built by myself to show my web dev skills
+            </p>
+            <ul>
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-css3-alt"></i></li>
+              <li><i class="fa-brands fa-js"></i></li>
+            </ul>
+          </div>
+          <a
+            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nalot.com.ng/&ved=2ahUKEwiC2LSv_5mNAxUxdUEAHTJZKKwQFnoECBgQAQ&usg=AOvVaw0nUJFmsHCbCZhtMhk8jQeW"
+            class="check-btn"
+            >visit site</a
+          >
+        </div>
+
+        <div class="project--card">
+          <div class="project-img-box">
+            <img
+              src="./images/nalot-logo.png"
+              alt="nalot website image"
+              class="project-img"
+            />
+          </div>
           <div class="project-card-text">
             <h4 class="project-name">NALOT WEBSITE</h4>
             <p class="project-description">
               website for a prominent construction company in Nigeria
             </p>
-            <p class="tech-used">HTML, CSS & JS</p>
+            <ul>
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-css3-alt"></i></li>
+              <li><i class="fa-brands fa-js"></i></li>
+            </ul>
 
             <a
               href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nalot.com.ng/&ved=2ahUKEwiC2LSv_5mNAxUxdUEAHTJZKKwQFnoECBgQAQ&usg=AOvVaw0nUJFmsHCbCZhtMhk8jQeW"
@@ -169,45 +291,8 @@
             >
           </div>
         </div>
-        <div class="project--card cd2">
-          <img src="./images/qr.jpg" alt="QR-component" class="project-img" />
+      </section>
 
-          <div class="project-card-text">
-            <h4 class="project-name">QR-component</h4>
-
-            <p class="project-description">
-              qr component on frontendmentor challenge.
-            </p>
-            <p class="tech-used">HTML & CSS</p>
-            <a
-              href="https://mjimran.github.io/qr-code-component/"
-              class="check-btn"
-              >visit site</a
-            >
-          </div>
-        </div>
-        <div class="project--card cd3">
-          <img
-            src="./images/port.jpg"
-            alt="portfolio 6image"
-            class="project-img"
-          />
-
-          <div class="project-card-text">
-            <h4 class="project-name">My portfolio</h4>
-
-            <p class="project-description">
-              A portfolio built by myself to show my web dev skills
-            </p>
-            <p class="tech-used">HTML, CSS & JS</p>
-          </div>
-          <a
-            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nalot.com.ng/&ved=2ahUKEwiC2LSv_5mNAxUxdUEAHTJZKKwQFnoECBgQAQ&usg=AOvVaw0nUJFmsHCbCZhtMhk8jQeW"
-            class="check-btn"
-            >visit site</a
-          >
-        </div>
-      </section> -->
       <!-- <section>
         <h3>contact us</h3>
       </section> -->
