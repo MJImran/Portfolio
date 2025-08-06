@@ -1,0 +1,74 @@
+@media (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+
+  .about-card {
+    grid-template-rows: 40rem;
+  }
+}
+
+@media (max-width: 61em) {
+  html {
+    font-size: 53%;
+  }
+
+  /* .header--links {
+    gap: 3.2rem;
+  }
+  .intro {
+    font-size: 2rem;
+  }
+
+  .author-name {
+    font-size: 3.7rem;
+  }
+
+  .job-description {
+    font-size: 1.2rem;
+  }
+
+  .about-card {
+    grid-template-columns: 4fr 5fr;
+  }
+
+  .projects-section {
+    column-gap: 2.4rem;
+  }
+  .project--card {
+    padding: 0.8rem;
+  } */
+}
+
+@media (max-width: 54.5em) {
+  /* .hero-section {
+    padding: 3.2rem 0 6.4rem 0;
+  }
+
+  .hero-textbox {
+    padding: 0 1.6rem;
+  }
+
+  .hero-text {
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 1.8rem;
+  }
+
+  .author-name {
+    font-size: 3rem;
+  }
+
+  .job-description {
+    font-size: 1.2rem;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+  } */
+}

@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>INUOLAJI,s Portfolio</title>
-    <link rel="icon" href="images/logo.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,174 +20,187 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <title>INUOLAJI,s Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <!--  -->
-      <!--  HEADER SECTION -->
-      <!--  -->
-      <header class="header">
-        <div class="header-nav">
-          <img src="./images/logo.png" class="logo" />
-          <nav class="nav-bar">
-            <ul class="header--links">
-              <li class="links">
-                <a
-                  class="btn nav-btn"
-                  href="https://mjimran.githubio/Portfolio/"
-                  >home</a
-                >
-              </li>
-              <li class="links"><a class="btn nav-btn" href="#">about</a></li>
-              <li class="links">
-                <a class="btn nav-btn" href="#">projects</a>
-              </li>
+    <!--  -->
+    <!--  HEADER SECTION -->
+    <!--  -->
+    <header class="header">
+      <div class="header-nav">
+        <img src="./images/logo.png" class="logo" />
+        <nav class="nav-bar">
+          <ul class="header--links">
+            <li class="links">
+              <a class="btn nav-btn" href="https://mjimran.githubio/Portfolio/"
+                >home</a
+              >
+            </li>
+            <li class="links"><a class="btn nav-btn" href="#">about</a></li>
+            <li class="links">
+              <a class="btn nav-btn" href="#">projects</a>
+            </li>
 
-              <li class="links">
-                <a class="btn nav-cta" href="#">contact me</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+            <li class="links">
+              <a class="btn nav-cta" href="#">contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-        <section class="hero-section">
-          <div class="hero-textbox">
-            <div class="hero-text">
-              <p class="intro">Hi, I am</p>
-              <h1 class="author-name">Muhammad Jamiu</h1>
-              <h6 class="job-description">
-                Front-end Dev / Javascript Programer
-              </h6>
-              <!-- <p class="intro">
+    <!--  -->
+    <!--  HEADER SECTION -->
+    <!--  -->
+
+    <section class="hero-section">
+      <div class="hero grid grid-2-cols">
+        <div class="hero-textbox">
+          <div class="hero-text">
+            <p class="intro">Hi, I am</p>
+            <h1 class="author-name">Muhammad Jamiu</h1>
+            <h6 class="job-description">
+              Front-end Dev / Javascript Programer
+            </h6>
+            <!-- <p class="intro">
               Helloo! I am Imran Inuolaji a web developer from Abuja, Nigeria. I
               enjoy building everything from small business sites to large
               interactive web apps. If you are a business seeking a web presence
               or an employer looking to hire, you can get In touch with me here.
             </p> -->
-            </div>
-            <div class="hero-icons">
-              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-              <a href="#" class="icon"
-                ><i class="fa-brands fa-square-linkedin"></i
-              ></a>
-              <a href="#" class="icon"></a>
-            </div>
           </div>
-          <div class="hero-image-container">
-            <img src="./images/coder2.jpg" alt="" class="hero-image" />
+          <div class="hero-icons">
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-square-linkedin"></i
+            ></a>
+            <a href="#" class="icon"></a>
           </div>
-        </section>
-      </header>
+        </div>
+        <div class="hero-image-container">
+          <img src="./images/coder2.jpg" alt="" class="hero-image" />
+        </div>
+      </div>
+    </section>
 
-      <!--  -->
-      <!--  ABOUT SECTION -->
-      <!--  -->
-      <section class="about-section">
-        <figure class="about-card">
-          <div class="author-img-box">
-            <img
-              src="./images/coderA.jpg"
-              alt="author image"
-              class="author-img"
-            />
+    <!--  -->
+    <!--  ABOUT SECTION -->
+    <!--  -->
+    <section class="about-section">
+      <div class="container grid grid-2-cols about-card">
+        <div class="author-img-box">
+          <img
+            src="./images/coderA.jpg"
+            alt="author image"
+            class="author-img"
+          />
+        </div>
+        <div class="about-textbox">
+          <h1 class="section-head">About</h1>
+          <p class="about-content">
+            As a seasoned frontend developer with over a year of professional
+            experience, I possess a strong skill set in designing and developing
+            high-quality user interfaces. Proficient in a range of programming
+            tools, I have consistently delivered results-driven solutions to
+            clients.
+          </p>
+          <div class="tab-titles">
+            <p class="tabs active-tab" onclick="openTab('skills')">Skills</p>
+            <p class="tabs" onclick="openTab('experience')">Experience</p>
+            <p class="tabs" onclick="openTab('education')">Education</p>
           </div>
-          <div class="about-textbox">
-            <h1 class="section-head">About</h1>
-            <p class="about-content">
-              As a seasoned frontend developer with over a year of professional
-              experience, I possess a strong skill set in designing and
-              developing high-quality user interfaces. Proficient in a range of
-              programming tools, I have consistently delivered results-driven
-              solutions to clients.
-            </p>
-            <div class="tab-titles">
-              <p class="tabs active-tab" onclick="openTab('skills')">Skills</p>
-              <p class="tabs" onclick="openTab('experience')">Experience</p>
-              <p class="tabs" onclick="openTab('education')">Education</p>
-            </div>
-            <div class="tab-content" id="experience">
-              <ul>
-                <li>
-                  <span class="tab-content-head">2+ years </span><br />Frontend
-                  Development
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content" id="education">
-              <ul>
-                <li>
-                  <span class="tab-content-head">B.Tech.</span><br />Civil
-                  Engineering
-                </li>
-                <!-- <li>
+          <div class="tab-content" id="experience">
+            <ul>
+              <li>
+                <span class="tab-content-head">2+ years </span><br />Frontend
+                Development
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="education">
+            <ul>
+              <li>
+                <span class="tab-content-head">B.Tech.</span><br />Civil
+                Engineering
+              </li>
+              <!-- <li>
                   <span class="tab-content-head">Web Design</span
                   ><br />Designing Web/app interfaces
                 </li> -->
-              </ul>
-            </div>
-            <div class="tab-content active-cont" id="skills">
-              <ul>
-                <li>
-                  <span class="tab-content-head">Front-end Dev</span><br />Web
-                  app Development
-                </li>
-                <li>
-                  <span class="tab-content-head">Web Design</span
-                  ><br />Designing Web/app interfaces
-                </li>
-              </ul>
-            </div>
-            <!-- <ul class="skill-set">
+            </ul>
+          </div>
+          <div class="tab-content active-cont" id="skills">
+            <ul>
+              <li>
+                <span class="tab-content-head">Front-end Dev</span><br />Web app
+                Development
+              </li>
+              <li>
+                <span class="tab-content-head">Web Design</span><br />Designing
+                Web/app interfaces
+              </li>
+            </ul>
+          </div>
+          <!-- <ul class="skill-set">
               <li class="skill">HTML</li>
               <li class="skill">CSS</li>
               <li class="skill">JS</li>
               <li class="skill">React</li>
             </ul> -->
-          </div>
-        </figure>
-      </section>
+        </div>
+      </div>
+    </section>
 
-      <!--  -->
-      <!-- SERVICES SECTION -->
-      <!--  -->
+    <!--  -->
+    <!-- SERVICES SECTION -->
+    <!--  -->
 
-      <section class="services">
-        <div class="services-container">
-          <h1 class="section-head">Services</h1>
-          <div class="service-list">
-            <div class="service-box">
-              <i class="fa-solid fa-code service-icon"></i>
+    <section class="services">
+      <div class="container services-section">
+        <h1 class="section-head">Services</h1>
+        <div class="service-list">
+          <div class="service-box">
+            <i class="fa-solid fa-code service-icon"></i>
+            <div class="height-60">
               <h2 class="service-head">Web Design</h2>
-              <p class="service-content">
-                I design user-friendly interfaces that meet the needs of my
-                clients. My designs are tailored to enhance user engagement.
-              </p>
             </div>
-            <div class="service-box">
-              <i class="fa-solid fa-computer service-icon"></i>
+            <p class="service-content">
+              I design user-friendly interfaces that meet the needs of my
+              clients. My designs are tailored to enhance user engagement.
+            </p>
+          </div>
+          <div class="service-box">
+            <i class="fa-solid fa-computer service-icon"></i>
+            <div class="height-60">
               <h2 class="service-head">Development and Implementation</h2>
-              <p class="service-content">
-                I design user-friendly interfaces that meet the needs of my
-                clients. My designs are tailored to enhance user engagement.
-              </p>
             </div>
-            <div class="service-box">
-              <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+            <p class="service-content">
+              I design user-friendly interfaces that meet the needs of my
+              clients. My designs are tailored to enhance user engagement.
+            </p>
+          </div>
+          <div class="service-box">
+            <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+            <div class="height-60">
               <h2 class="service-head">Maintenance and update</h2>
-              <p class="service-content">
-                I design user-friendly interfaces that meet the needs of my
-                clients. My designs are tailored to enhance user engagement.
-              </p>
             </div>
+            <p class="service-content">
+              I design user-friendly interfaces that meet the needs of my
+              clients. My designs are tailored to enhance user engagement.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--  -->
-      <!--  PROJECTS SECTION -->
-      <!--  -->
-      <section class="projects">
+    <!--  -->
+    <!--  PROJECTS SECTION -->
+    <!--  -->
+    <section class="projects">
+      <div class="container projects-section grid grid-4-cols">
         <h1 class="section-head">Portfolio</h1>
 
         <div class="project--card">
@@ -220,7 +231,11 @@
 
         <div class="project--card">
           <div class="project-img-box">
-            <img src="./images/qr.jpg" alt="QR-component" class="project-img" />
+            <img
+              src="./images/bar-code.jpg"
+              alt="QR-component"
+              class="project-img"
+            />
           </div>
 
           <div class="project-card-text">
@@ -245,7 +260,7 @@
         <div class="project--card">
           <div class="project-img-box">
             <img
-              src="./images/login-page.jpg"
+              src="./images/log-page.jpg"
               alt="portfolio 6image"
               class="project-img"
             />
@@ -273,7 +288,7 @@
         <div class="project--card">
           <div class="project-img-box">
             <img
-              src="./images/nalot-logo.png"
+              src="./images/nalot.jpg"
               alt="nalot website image"
               class="project-img"
             />
@@ -296,28 +311,28 @@
             >
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--  -->
-      <!--  CONTACT ME SECTION -->
-      <!--  -->
-      <!-- <section>
+    <!--  -->
+    <!--  CONTACT ME SECTION -->
+    <!--  -->
+    <!-- <section>
         <h3>contact us</h3>
       </section> -->
 
-      <!--  -->
-      <!--  FOOTER SECTION -->
-      <!--  -->
-      <footer>
-        <!-- <ul>
+    <!--  -->
+    <!--  FOOTER SECTION -->
+    <!--  -->
+    <footer>
+      <!-- <ul>
           <li><a href="#">#</a></li>
           <li><a href="#">#</a></li>
           <li><a href="#">#</a></li>
           <li><a href="#">#</a></li>
         </ul> -->
-        <p>copyright © 2025 Inuolaji. all rights reserved.</p>
-      </footer>
-    </div>
+      <p>copyright © 2025 Inuolaji. all rights reserved.</p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
