@@ -2,10 +2,40 @@
   html {
     font-size: 55%;
   }
+  .header--links {
+    gap: 3.5rem;
+  }
+  .intro {
+    font-size: 2.3rem;
+  }
+
+  .author-name {
+    font-size: 4.2rem;
+  }
+
+  .job-description {
+    font-size: 1.5rem;
+  }
+  /* .header-nav {
+    max-width: 120rem;
+  } */
 
   .about-card {
     grid-template-rows: 40rem;
   }
+
+  /* 
+
+  .about-card {
+    grid-template-columns: 4fr 5fr;
+  }
+
+  .projects-section {
+    column-gap: 2.4rem;
+  }
+  .project--card {
+    padding: 0.8rem;
+  } */
 }
 
 @media (max-width: 61em) {
@@ -71,4 +101,149 @@
     align-items: center;
     gap: 1.6rem;
   } */
+  .mobile-nav-btn {
+    display: block;
+  }
+  .nav-bar {
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.902);
+    top: 0;
+    right: 0;
+    height: 95vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.5s ease-in;
+  }
+  .nav-open .nav-bar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+  .nav-open .mobile-nav-icon[name="menu-close"] {
+    display: block;
+  }
+  .nav-open .mobile-nav-icon[name="menu-open"] {
+    display: none;
+  }
+  .header--links {
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 2.4rem;
+    margin-top: 5rem;
+  }
+  .nav-btn:link,
+  .nav-btn:visited {
+    font-size: 2.8rem;
+  }
+  .nav-open .header--link {
+    opacity: 1;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+  .header--links {
+    gap: 3.5rem;
+  }
+  .hero-textbox {
+    grid-row: 2/3;
+  }
+  .intro {
+    font-size: 2.5rem;
+  }
+
+  .author-name {
+    font-size: 4.7rem;
+  }
+
+  .job-description {
+    font-size: 1.5rem;
+  }
+  .hero-image {
+    width: 45%;
+  }
+  .about-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40rem;
+  }
+  .about-textbox {
+    border-left: 5px solid #63730b;
+    padding: 1rem;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .author-img-box {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+  .author-img {
+    width: 40%;
+  }
+  .author-img-box {
+    display: none;
+  }
+  .grid-4-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
+@media (max-width: 40em) {
+  html {
+    font-size: 60%;
+  }
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    gap: 3.6rem;
+  }
+  .intro {
+    font-size: 2rem;
+  }
+
+  .author-name {
+    font-size: 3.5rem;
+  }
+
+  .job-description {
+    font-size: 1.2rem;
+  }
+  .hero-icons {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 27.5em) {
+  .hero-image {
+    width: 60%;
+  }
+
+  .hero-textbox {
+    padding: 0 1.6rem;
+  }
+
+  .intro {
+    font-size: 2.3rem;
+  }
+
+  .author-name {
+    font-size: 2.8rem;
+  }
+
+  .job-description {
+    font-size: 1rem;
+  }
+  .hero-icons {
+    font-size: 2.8rem;
+  }
+}
+/*7 / 8 /10 /12 /15 /18 /23 /28 /35 /42 /51 /62 /75 /93 */

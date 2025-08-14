@@ -3,31 +3,31 @@
 
 /*7 / 8 /10 /12 /15 /18 /23 /28 /35 /42 /51 /62 /75 /93 */
 
-/* #od1
-*/
-/*******************/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  /*has to be here and in body selector to work*/
 }
 
 body {
   color: #14283f;
   font-family: "montserrat", sans-serif;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-  /*background-color:red;*/
 }
+
 .grid {
   display: grid;
 }
@@ -66,9 +66,8 @@ body {
 
 .header {
   background-color: #fff;
-  padding: 2.4 0 4.8rem 0;
-  /* background: linear-gradient(0deg, #292929 50%, #fff 50%); */
-  /* background: linear-gradient(100deg, 50%, #fff 50%); */
+  /* padding: 0 0 4.8rem 0; */
+  position: relative;
 }
 
 .header-nav {
@@ -77,8 +76,8 @@ body {
   justify-content: space-between;
   height: 9.6rem;
   color: #fff;
-  padding: 6.2rem 4.8rem 0 4.8rem;
-  margin-bottom: 4.8rem;
+  padding: 6.2rem 4.8rem;
+  /* margin-bottom: 4.8rem; */
 }
 
 .logo {
@@ -88,10 +87,6 @@ body {
 }
 
 .nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
 }
 
 .header--links {
@@ -99,6 +94,7 @@ body {
   align-items: center;
   gap: 5.2rem;
 }
+
 .links:last-child:link {
   background-color: #1f3441;
   padding: 0.8rem 1.2rem;
@@ -114,19 +110,13 @@ body {
 .nav-btn:visited {
   font-size: 1.8rem;
   font-weight: 600;
-  /* letter-spacing: 1px; */
-  /* color: #101010; */
   color: #63730b;
-  /* text-transform: uppercase; */
 }
 
 .nav-btn:hover,
 .nav-btn:active {
-  /* color: #949494; */
   color: #a5bf13;
   color: #101010;
-  font-weight: 600;
-  /* letter-spacing: 1px; */
   border-bottom: 2px solid #63730b;
   transition: all 0.15s ease-in;
 }
@@ -143,17 +133,29 @@ body {
   font-weight: 600;
   transition: all 0.15s ease-in;
 }
+
 .nav-cta:hover,
 .nav-cta:active {
   color: #292929;
   color: #101010;
   border: 2px solid #101010;
-  font-weight: 600;
-  border-radius: 1rem;
 }
-/* .nav-bar:last-child {
-  padding: 0 0;
-} */
+
+.mobile-nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon {
+  color: #63730b;
+  font-size: 3.2rem;
+}
+
+.mobile-nav-icon[name="menu-close"] {
+  display: none;
+}
 
 /*******************/
 /* HERO SECTION */
@@ -165,9 +167,10 @@ body {
   padding: 4.8rem 0 9.6rem 0;
   color: #101010;
 }
+
 .hero {
   padding: 0 3.2rem;
-  column-gap: 4.8rem;
+  gap: 4.8rem;
   justify-content: center;
 }
 
@@ -228,16 +231,12 @@ body {
 }
 
 .hero-image-container {
-  /* grid-column: 2/3; */
   display: flex;
   justify-content: center;
 }
 
 .hero-image {
   width: 80%;
-  /* filter: grayscale(100%);
-  border-radius: 2rem;
-*/
 }
 
 /*******************/
@@ -264,7 +263,6 @@ body {
 }
 
 .author-img {
-  grid-column: 1/2;
   width: 100%;
 }
 
@@ -327,6 +325,7 @@ body {
   color: #73860d;
   font-size: 1.2rem;
 }
+
 .tab-content.active-cont {
   display: block;
 }
@@ -355,7 +354,7 @@ body {
 .service-list {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 3.1rem;
 }
 
@@ -363,11 +362,13 @@ body {
   font-size: 2.3rem;
   margin-bottom: 1.8rem;
 }
+
 .height-60 {
   display: flex;
   align-items: center;
   height: 6rem;
 }
+
 .service-head {
   font-size: 2.3rem;
   margin-bottom: 1.2rem;
@@ -388,7 +389,7 @@ body {
 }
 
 .projects-section {
-  column-gap: 4.8rem;
+  gap: 4.8rem;
 }
 
 .projects h1 {
@@ -417,7 +418,7 @@ body {
 }
 
 .project-img {
-  max-width: 100%;
+  width: 15rem;
   height: auto;
   border-radius: 1rem;
   /* filter: grayscale(100%); */
@@ -435,10 +436,12 @@ body {
   font-size: 1.8rem;
   text-transform: uppercase;
 }
+
 .project-description {
   display: none;
   font-size: 1.5rem;
 }
+
 .project-card-text ul {
   /* margin-top: 2rem; */
   /* padding:; */
@@ -447,6 +450,7 @@ body {
   gap: 1.5rem;
   align-items: center;
 }
+
 .project-card-text ul li i {
   font-size: 2.1rem;
   color: #63730b;
@@ -470,9 +474,6 @@ body {
   border: 2px solid #101010;
 }
 
-/* section {
-  border: 2px solid #63730b;
-} */
 /*******************/
 /* FOOTER SECTION */
 
