@@ -18,3 +18,13 @@ function openTab(tabName) {
   event.currentTarget.classList.add("active-tab");
   document.getElementById(tabName).classList.add("active-cont");
 }
+
+const mobileNavBtn = document.querySelector(".mobile-nav-btn");
+
+const navBar = document.querySelector(".header-nav");
+
+const navOpen = () => {
+  navBar.classList.toggle("nav-open");
+  // mobileNavBtn.classList.toggle("nav-open");
+};
+mobileNavBtn.addEventListener("click", navOpen);
