@@ -86,9 +86,6 @@ body {
   filter: grayscale(100%);
 }
 
-.nav-bar {
-}
-
 .header--links {
   display: flex;
   align-items: center;

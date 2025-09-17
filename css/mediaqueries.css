@@ -1,3 +1,5 @@
+/* dtart */
+
 @media (max-width: 75em) {
   html {
     font-size: 55%;
@@ -169,29 +171,36 @@
   .job-description {
     font-size: 1.5rem;
   }
+
   .hero-image {
     width: 45%;
   }
+
   .about-card {
     grid-template-columns: 1fr;
     grid-template-rows: 40rem;
   }
+
   .about-textbox {
     border-left: 2px solid #63730b;
     padding: 1rem;
     grid-column: 1/-1;
     grid-row: 1/2;
   }
+
   .author-img-box {
     grid-column: 1/-1;
     grid-row: 2/3;
   }
+
   .author-img {
     width: 40%;
   }
+
   .author-img-box {
     display: none;
   }
+
   .grid-4-cols {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -258,4 +267,5 @@
     letter-spacing: 0.3px;
   }
 }
+
 /*7 / 8 /10 /12 /15 /18 /23 /28 /35 /42 /51 /62 /75 /93 */
