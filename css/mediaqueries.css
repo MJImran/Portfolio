@@ -186,10 +186,10 @@
     grid-column: 1/-1;
     grid-row: 1/2;
   }
-  <<<<<<< HEAD ======= .section-head {
+  .section-head {
     border-bottom: 2px solid #63730b;
   }
-  >>>>>>>e6c727a0dcce44aac16be331e5ea1b4c357b39b5 .author-img-box {
+  .author-img-box {
     grid-column: 1/-1;
     grid-row: 2/3;
   }
