@@ -180,15 +180,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: 40rem;
   }
-
   .about-textbox {
-    border-left: 2px solid #63730b;
+    /*border-top: 2px solid #63730b;*/
     padding: 1rem;
     grid-column: 1/-1;
     grid-row: 1/2;
   }
-
-  .author-img-box {
+  <<<<<<< HEAD ======= .section-head {
+    border-bottom: 2px solid #63730b;
+  }
+  >>>>>>>e6c727a0dcce44aac16be331e5ea1b4c357b39b5 .author-img-box {
     grid-column: 1/-1;
     grid-row: 2/3;
   }
@@ -260,7 +261,7 @@
     font-size: 2.8rem;
   }
   .about-card {
-    grid-template-rows: 60rem;
+    grid-template-rows: 45rem;
   }
   .about-content {
     font-size: 1.5rem;
