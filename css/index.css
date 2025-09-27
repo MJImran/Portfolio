@@ -279,7 +279,7 @@ body {
   font-weight: 400;
 }
 
-.tab-titles {
+.tab-container {
   display: flex;
   gap: 2.3rem;
   margin: 2rem 0;
@@ -287,12 +287,12 @@ body {
   font-weight: 500;
 }
 
-.tabs {
+.tab {
   cursor: pointer;
   position: relative;
 }
 
-.tabs::after {
+.tab::after {
   content: "";
   width: 0;
   height: 3px;
@@ -303,7 +303,7 @@ body {
   transition: 0.5s;
 }
 
-.tabs.active-tab::after {
+.tab.active-tab::after {
   width: 100%;
 }
 

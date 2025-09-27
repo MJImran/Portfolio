@@ -35,13 +35,13 @@
         <nav class="nav-bar">
           <ul class="header--links">
             <li class="links">
-              <a class="btn nav-btn" href="https://mjimran.githubio/Portfolio/"
-                >home</a
-              >
+              <a class="btn nav-btn" href="#home">home</a>
             </li>
-            <li class="links"><a class="btn nav-btn" href="#">about</a></li>
             <li class="links">
-              <a class="btn nav-btn" href="#">projects</a>
+              <a class="btn nav-btn" href="#about">about</a>
+            </li>
+            <li class="links">
+              <a class="btn nav-btn" href="#projects">portfolio</a>
             </li>
 
             <li class="links">
@@ -59,7 +59,7 @@
     <!--  -->
     <!--  HER0 SECTION -->
     <!--  -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div class="hero grid grid-2-cols">
         <div class="hero-textbox">
           <div class="hero-text">
@@ -96,7 +96,7 @@
     <!--  -->
     <!--  ABOUT SECTION -->
     <!--  -->
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="container grid grid-2-cols about-card">
         <div class="author-img-box">
           <img
@@ -114,10 +114,10 @@
             tools, I have consistently delivered results-driven solutions to
             clients.
           </p>
-          <div class="tab-titles">
-            <p class="tabs active-tab" onclick="openTab('skills')">Skills</p>
-            <p class="tabs" onclick="openTab('experience')">Experience</p>
-            <p class="tabs" onclick="openTab('education')">Education</p>
+          <div class="tab-container">
+            <p class="tab active-tab" data="skills">Skills</p>
+            <p class="tab" data="experience">Experience</p>
+            <p class="tab" data="education">Education</p>
           </div>
           <div class="tab-content" id="experience">
             <ul>
@@ -165,7 +165,7 @@
     <!-- SERVICES SECTION -->
     <!--  -->
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="container services-section">
         <h1 class="section-head">Services</h1>
         <div class="service-list">
@@ -206,7 +206,7 @@
     <!--  -->
     <!--  PROJECTS SECTION -->
     <!--  -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container projects-section grid grid-4-cols">
         <h1 class="section-head">Portfolio</h1>
 
