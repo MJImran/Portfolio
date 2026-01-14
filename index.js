@@ -12,7 +12,8 @@ const navCta = document.querySelector(".nav-cta");
 // Functions
 
 function login() {
-  window.location.href = "./user.html";
+  const user = false;
+  user ? (window.location.href = "./user.html") : "./index.html";
 }
 
 const mobileNavOpen = () => {
