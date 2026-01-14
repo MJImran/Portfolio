@@ -7,8 +7,13 @@ const navBar = document.querySelector(".header-nav");
 const tabContainer = document.querySelector(".tab-container");
 const tabLinks = document.querySelectorAll(".tab");
 const tabContents = document.querySelectorAll(".tab-content");
+const navCta = document.querySelector(".nav-cta");
 
 // Functions
+
+function login() {
+  window.location.href = "./user.html";
+}
 
 const mobileNavOpen = () => {
   navBar.classList.toggle("nav-open");
@@ -34,3 +39,4 @@ const aboutTabSwitch = function (e) {
 
 tabContainer.addEventListener("click", aboutTabSwitch);
 mobileNavBtn.addEventListener("click", mobileNavOpen);
+navCta.addEventListener("click", login);
