@@ -9,6 +9,7 @@ const tabLinks = document.querySelectorAll(".tab");
 const tabContents = document.querySelectorAll(".tab-content");
 const navCta = document.querySelector(".nav-cta");
 const logo = document.querySelector(".logo");
+const userBtn = document.querySelector(".user-btn");
 
 let user = false;
 // Functions
@@ -18,7 +19,7 @@ function pass() {
 }
 
 function login() {
-  user ? (window.location.href = "./user.html") : "./index.html";
+  window.location.href = user ? "./pages/user.html" : "./index.html";
 }
 
 const mobileNavOpen = () => {
@@ -44,6 +45,7 @@ const aboutTabSwitch = function (e) {
 // Event handlers
 
 tabContainer.addEventListener("click", aboutTabSwitch);
+
 mobileNavBtn.addEventListener("click", mobileNavOpen);
 navCta.addEventListener("click", login);
 logo.addEventListener("click", pass);

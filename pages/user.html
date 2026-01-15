@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
   </head>
   <body>
     <h1>Dashboard</h1>
     <p>Only logged-in users can see this.</p>
+    <button class="user-btn">log out</button>
+    <script>
+      const userBtn = document.querySelector(".user-btn");
+      userBtn.addEventListener("click", () => {
+        window.location.href = "../index.html";
+      });
+    </script>
   </body>
 </html>
