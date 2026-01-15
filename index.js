@@ -8,11 +8,16 @@ const tabContainer = document.querySelector(".tab-container");
 const tabLinks = document.querySelectorAll(".tab");
 const tabContents = document.querySelectorAll(".tab-content");
 const navCta = document.querySelector(".nav-cta");
+const logo = document.querySelector(".logo");
 
+let user = false;
 // Functions
 
+function pass() {
+  user = !user;
+}
+
 function login() {
-  const user = false;
   user ? (window.location.href = "./user.html") : "./index.html";
 }
 
@@ -41,3 +46,4 @@ const aboutTabSwitch = function (e) {
 tabContainer.addEventListener("click", aboutTabSwitch);
 mobileNavBtn.addEventListener("click", mobileNavOpen);
 navCta.addEventListener("click", login);
+logo.addEventListener("click", pass);
