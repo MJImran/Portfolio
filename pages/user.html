@@ -7,14 +7,41 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Dashboard</h1>
-    <p>Only logged-in users can see this.</p>
-    <button class="user-btn">log out</button>
+    <div class="view">
+      <button type="button" class="user-btn">log in</button>
+    </div>
     <script>
+      let user = false;
+      // //////////////////
       const userBtn = document.querySelector(".user-btn");
-      userBtn.addEventListener("click", () => {
-        window.location.href = "../index.html";
-      });
+      const displayArea = document.querySelector(".view");
+      //////////////////////
+      function prepareUserPage(param) {
+        if (param) {
+          const content = `<h1>Dashboard</h1>
+          <p>Only logged-in users can see this.</p><button class="user-btn">${
+            param ? "log out" : "log in"
+          }</button>`;
+          displayArea.innerHTML = content;
+
+          const userBtn = document.querySelector(".user-btn");
+          userBtn.addEventListener("click", loginUser);
+        } else {
+          displayArea.innerHTML = `<button class="user-btn">${
+            param ? "log out" : "log in"
+          }</button>`;
+          const userBtn = document.querySelector(".user-btn");
+          userBtn.addEventListener("click", loginUser);
+        }
+      }
+
+      function loginUser(e) {
+        user = !user;
+        prepareUserPage(user, this);
+        // window.location.href = "../index.html";
+      }
+      /////////////////////
+      userBtn.addEventListener("click", loginUser);
     </script>
   </body>
 </html>

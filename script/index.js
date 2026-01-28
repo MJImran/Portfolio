@@ -11,16 +11,7 @@ const navCta = document.querySelector(".nav-cta");
 const logo = document.querySelector(".logo");
 const userBtn = document.querySelector(".user-btn");
 
-let user = false;
 // Functions
-
-function pass() {
-  user = !user;
-}
-
-function login() {
-  window.location.href = user ? "./pages/user.html" : "./index.html";
-}
 
 const mobileNavOpen = () => {
   navBar.classList.toggle("nav-open");
@@ -47,5 +38,3 @@ const aboutTabSwitch = function (e) {
 tabContainer.addEventListener("click", aboutTabSwitch);
 
 mobileNavBtn.addEventListener("click", mobileNavOpen);
-navCta.addEventListener("click", login);
-logo.addEventListener("click", pass);

@@ -30,9 +30,10 @@ body {
 
 .grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.grid-4-cols {
+/* .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -46,7 +47,7 @@ body {
 
 .grid-1-cols {
   grid-template-columns: 1fr;
-}
+} */
 
 .section-head {
   color: #63730b;
@@ -154,7 +155,7 @@ body {
   display: none;
 }
 
-/*******************/
+/* ***************** */
 /* HERO SECTION */
 /*******************/
 
@@ -400,7 +401,6 @@ body {
   padding: 1.5rem;
   gap: 2.3rem;
 
-  /* border: 2px solid#63730b; */
   background-color: #f0f0f0;
   border-radius: 0.8rem;
 }
@@ -418,7 +418,6 @@ body {
   width: 15rem;
   height: auto;
   border-radius: 1rem;
-  /* filter: grayscale(100%); */
 }
 
 .project-card-text {
@@ -429,7 +428,6 @@ body {
 }
 
 .project-name {
-  /* margin-bottom: 2rem; */
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -440,8 +438,6 @@ body {
 }
 
 .project-card-text ul {
-  /* margin-top: 2rem; */
-  /* padding:; */
   list-style: none;
   display: flex;
   gap: 1.5rem;
